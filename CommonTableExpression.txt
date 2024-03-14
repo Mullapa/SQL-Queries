@@ -1,3 +1,4 @@
+Finding the average amount paid by the top 5 customers
 
 with top_5_customers_cte (amount, city, country, customer_id, first_name, last_name) as
 (select sum(p.amount) amount, c.citz, d.country, a.customer_id, a.first_name, a.last_name from payment p 
