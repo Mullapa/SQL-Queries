@@ -1,0 +1,15 @@
+
+with top_5_customers_cte (amount, city, country, customer_id, first_name, last_name) as
+(select sum(p.amount) amount, c.citz, d.country, a.customer_id, a.first_name, a.last_name from payment p 
+inner join customer a
+on p.customer_id = a.customer_id
+inner join address b
+on a.address_id = b.address_id
+inner join country d
+on c.country_id = d.country_id
+GROUP BY d.country, c.city, a.customer_id
+HAVING c.city in ('Aurora','Acua', 'Citrus Heights', Iwaki', 'Ambattur', 'Shanwei', 'So Leopoldo','Teboksary', 'Tianjin', 'Cianjur')
+order by amount desc limit 5)
+SELECT AVG (amount) AS average_amount
+FROM
+top_5_customers_cte
