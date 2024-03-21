@@ -19,4 +19,5 @@ The data for this project is fabricated and provided by Career Foundry in the pr
 
 Visualizations:
 
-The visualizations for the project were created in Tableau Public. The visuals can be found here: 
+The visualizations for the project were created in Tableau Public. The visuals can be found here: [Tableau Public dashboard](https://public.tableau.com/app/profile/padma.kumari.mullapudi/vizzes)
+
